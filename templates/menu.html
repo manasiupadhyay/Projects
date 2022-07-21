@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+  body{
+    background:url(../Static/) ;
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+</head>
+<body>
+
+<br>
+<br>
+<br>
+
+<div> 
+<fieldset>
+<form action="/savelink4" method="POST">  
+  Enter Food Name:
+  <input type="name" name="name" required><br><br><br><br>
+  Enter Number of person:
+  <input type="number" name="person" required><br><br><br><br>
+  Enter Quintity:
+  <input type="number" name="Quintity" required><br><br><br><br>
+
+  <button type="submit">save</button>
+  <button type="submit">back</button>
+  
+</form>
+</fieldset>
+
+</div>
+</body>
+</html>

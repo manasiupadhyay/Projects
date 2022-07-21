@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/menulink">menu</a></li>
+  <li><a href="/contactlink">Contact</a></li>
+  <li><a href="/loginlink">Login</a></li>
+  <li><a href="/showlink">display</a></li>
+</ul>
+<br>
+
+<table border="2px solid">
+    {% for i in data %}
+    <tr>
+        <td>{{i[0]}}</td>
+        <td>{{i[1]}}</td>
+        <td>{{i[2]}}</td>
+        <td>{{i[3]}}</td>
+        <td>{{i[4]}}</td>
+        <td> <a href="/editlink/{{i[0]}}">edit</a>
+            <a href="/deletelink/{{i[0]}}">delete</a>
+        </td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+</body>
+</html>

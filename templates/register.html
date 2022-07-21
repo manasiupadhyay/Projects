@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+  body{
+    background:url(../Static/) ;
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/loginlink">Login</a></li>
+  
+</ul>
+<br>
+<br>
+<br>
+
+<div> 
+<fieldset>
+<form action="/savelink" method="POST">  
+  Enter Name:
+  <input type="text" name="name" required><br><br><br><br>
+  Enter Password:
+  <input type="password" name="password" required><br><br><br><br>
+  Enter City:
+  <input type="text" name="city" required><br><br><br><br>
+
+  <button type="submit">save</button>
+  <button type="submit">back</button>
+  <a href="/">Go to Register Page</a>>
+</form>
+</fieldset>
+
+</div>
+</body>
+</html>
